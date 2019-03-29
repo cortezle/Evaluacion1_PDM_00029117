@@ -21,7 +21,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:columnCount="3"
-        android:layout_gravity="center">
+        android:layout_gravity="center"
+        >
 
 
     <TextView
@@ -29,88 +30,89 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/azul"
+        android:textSize="20sp"
         android:layout_column="0"
         android:layout_row="0"
-        android:text="PRODUCTO
-#"/>
+        android:text="PRODUCTO\n #" />
 
     <TextView
+        android:textSize="20sp"
         android:id="@+id/dos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/gris"
         android:layout_column="0"
         android:layout_row="1"
-        android:text="PRODUCTO
-#"/>
+        android:text="PRODUCTO\n #"/>
     <TextView
+        android:textSize="20sp"
         android:id="@+id/tres"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#b92b27"
         android:layout_column="0"
         android:layout_row="2"
-        android:text="PRODUCTO
-#"/>
+        android:text="PRODUCTO\n #"/>
 
 
 
 <TextView
     android:id="@+id/cuatro"
+    android:textSize="20sp"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:background="@color/celeste"
     android:layout_column="1"
     android:layout_row="0"
-    android:text="PRODUCTO
-#"/>
+    android:text="PRODUCTO\n #"/>
+
 <TextView
     android:id="@+id/cinco"
+    android:textSize="20sp"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:background="@color/negro"
     android:layout_column="1"
     android:layout_row="1"
-    android:text="PRODUCTO
-#"/>
+    android:text="PRODUCTO\n #"/>
 <TextView
     android:id="@+id/seis"
+    android:textSize="20sp"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:background="@color/verde"
     android:layout_column="1"
     android:layout_row="2"
-    android:text="PRODUCTO
-#"/>
+    android:text="PRODUCTO\n #"/>
 
 
 <TextView
+    android:textSize="20sp"
     android:id="@+id/siete"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:background="@color/rosado"
     android:layout_column="2"
     android:layout_row="0"
-    android:text="PRODUCTO
-#"/>
+    android:text="PRODUCTO\n #"/>
 <TextView
     android:id="@+id/ocho"
+    android:textSize="20sp"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:background="@color/amarillo"
     android:layout_column="2"
     android:layout_row="1"
-    android:text="PRODUCTO
-#"/>
+    android:text="PRODUCTO\n #"/>
 <TextView
     android:id="@+id/nueve"
+    android:textSize="20sp"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:background="@color/morado"
     android:layout_column="2"
     android:layout_row="2"
-    android:text="PRODUCTO
-#"/>
+    android:text="PRODUCTO\n #"/>
     </GridLayout>
 
     <LinearLayout
@@ -123,15 +125,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="usuario"
-        android:textAllCaps="true"/>
+        android:textAllCaps="true"
+        android:layout_gravity="left"/>
 
     <EditText
         android:id="@+id/ed1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Escriba el usuario aqui"/>
 
     <TextView
+        android:layout_gravity="left"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Email"
@@ -139,7 +143,7 @@
 
     <EditText
         android:id="@+id/ed2"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Escriba el email aqui"/>
 

@@ -23,18 +23,18 @@
         android:layout_margin="20sp"
         >
 
-       <TextView
-           android:id="@+id/user"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:gravity="center"/>
         <TextView
-            android:id="@+id/email"
+            android:id="@+id/user_share"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"/>
         <TextView
-            android:id="@+id/cont"
+            android:id="@+id/email_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/cont_share"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"/>
@@ -49,6 +49,7 @@
         android:layout_gravity="center"
         android:layout_margin="20dp"/>
 
+
     <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -58,7 +59,7 @@
 
         <TextView
             android:textSize="20sp"
-            android:id="@+id/uno"
+            android:id="@+id/uno_share"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/azul"
@@ -68,7 +69,7 @@
 #"/>
 
         <TextView
-            android:id="@+id/dos"
+            android:id="@+id/dos_share"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/gris"
@@ -78,7 +79,7 @@
             android:text="PRODUCTO
 #"/>
         <TextView
-            android:id="@+id/tres"
+            android:id="@+id/tres_share"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
@@ -91,7 +92,7 @@
 
 
         <TextView
-            android:id="@+id/cuatro"
+            android:id="@+id/cuatro_share"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/celeste"
@@ -101,7 +102,7 @@
             android:text="PRODUCTO
 #"/>
         <TextView
-            android:id="@+id/cinco"
+            android:id="@+id/cinco_share"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
@@ -111,7 +112,7 @@
             android:text="PRODUCTO
 #"/>
         <TextView
-            android:id="@+id/seis"
+            android:id="@+id/seis_share"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
@@ -123,7 +124,7 @@
 
 
         <TextView
-            android:id="@+id/siete"
+            android:id="@+id/siete_share"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
@@ -133,7 +134,7 @@
             android:text="PRODUCTO
 #"/>
         <TextView
-            android:id="@+id/ocho"
+            android:id="@+id/ocho_share"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
@@ -143,7 +144,7 @@
             android:text="PRODUCTO
 #"/>
         <TextView
-            android:id="@+id/nueve"
+            android:id="@+id/nueve_share"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
@@ -154,13 +155,6 @@
 #"/>
     </GridLayout>
 
-    <Button
-        android:id="@+id/btn_share"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="30dp"
-        android:text="Share"/>
 
 
 </LinearLayout>

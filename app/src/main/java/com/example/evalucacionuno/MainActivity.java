@@ -39,12 +39,12 @@ public class MainActivity extends AppCompatActivity {
 
 
         tx1.setOnClickListener(v->{
-            tx1.setText("PRODUCTO \n"+ String.valueOf(cont1++));
+            tx1.setText("PRODUCTO \n"+ "#"+String.valueOf(cont1++));
         });
 
         tx2.setOnClickListener(v->{
             tx2.setText("PRODUCTO \n" +
-                    ""+ String.valueOf(cont2++));
+                    "#"+ String.valueOf(cont2++));
         });
 
 
@@ -55,39 +55,47 @@ public class MainActivity extends AppCompatActivity {
 
         tx4.setOnClickListener(v->{
             tx4.setText("PRODUCTO \n" +
-                    ""+ String.valueOf(cont4++));
+                    "#"+ String.valueOf(cont4++));
         });
         tx5.setOnClickListener(v->{
             tx5.setText("PRODUCTO \n" +
-                    ""+ String.valueOf(cont5++));
+                    "#"+ String.valueOf(cont5++));
         });
         tx6.setOnClickListener(v->{
             tx6.setText("PRODUCTO \n" +
-                    ""+ String.valueOf(cont6++));
+                    "#"+ String.valueOf(cont6++));
         });
         tx7.setOnClickListener(v->{
             tx7.setText("PRODUCTO \n" +
-                    ""+ String.valueOf(cont7++));
+                    "#"+ String.valueOf(cont7++));
         });
         tx8.setOnClickListener(v->{
             tx8.setText("PRODUCTO \n" +
-                    ""+ String.valueOf(cont8++));
+                    "#"+ String.valueOf(cont8++));
         });
         tx9.setOnClickListener(v->{
             tx9.setText("PRODUCTO \n" +
-                    ""+ String.valueOf(cont9++));
+                    "#"+ String.valueOf(cont9++));
         });
 
         bt1.setOnClickListener(v->{
-            String text = ed1.getText().toString();
-            String text2 = ed2.getText().toString();
-            String text3 = String.valueOf((cont1-1)+(cont2-1)+(cont3-1)+(cont4-1)+(cont5-1)+(cont6-1)+(cont7-1)+(cont8-1) +(cont9-1));
 
             Intent mIntent = new Intent(MainActivity.this,Main2Activity.class);
             Bundle bolsa = new Bundle();
-            bolsa.putString(AppConstant.TEXT_KEY,text);
-            bolsa.putString(AppConstant.TEXT_KEY2,text2);
-            bolsa.putString(AppConstant.TEXT_KEY3,text3);
+            bolsa.putString(AppConstant.TEXT_KEY,ed1.getText().toString());
+            bolsa.putString(AppConstant.TEXT_KEY2,ed2.getText().toString());
+            bolsa.putString(AppConstant.TEXT_KEY3,String.valueOf((cont1-1)+(cont2-1)+(cont3-1)+(cont4-1)+(cont5-1)+(cont6-1)+(cont7-1)+(cont8-1) +(cont9-1)));
+            bolsa.putString(AppConstant.TEXT_KEY4,String.valueOf(cont1-1));
+            bolsa.putString(AppConstant.TEXT_KEY5,String.valueOf(cont2-1));
+            bolsa.putString(AppConstant.TEXT_KEY6,String.valueOf(cont3-1));
+            bolsa.putString(AppConstant.TEXT_KEY7,String.valueOf(cont4-1));
+            bolsa.putString(AppConstant.TEXT_KEY8,String.valueOf(cont5-1));
+            bolsa.putString(AppConstant.TEXT_KEY9,String.valueOf(cont6-1));
+            bolsa.putString(AppConstant.TEXT_KEY10,String.valueOf(cont7-1));
+            bolsa.putString(AppConstant.TEXT_KEY11,String.valueOf(cont8-1));
+            bolsa.putString(AppConstant.TEXT_KEY12,String.valueOf(cont9-1));
+
+
             mIntent.putExtras(bolsa);
             startActivity(mIntent);
         });
