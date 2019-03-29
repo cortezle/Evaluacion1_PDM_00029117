@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contador de productos"
+        android:textSize="30dp"
+        android:layout_gravity="center"/>
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:layout_gravity="center">
+
+
+    <TextView
+        android:id="@+id/uno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/azul"
+        android:layout_column="0"
+        android:layout_row="0"
+        android:text="PRODUCTO
+#"/>
+
+    <TextView
+        android:id="@+id/dos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/gris"
+        android:layout_column="0"
+        android:layout_row="1"
+        android:text="PRODUCTO
+#"/>
+    <TextView
+        android:id="@+id/tres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#b92b27"
+        android:layout_column="0"
+        android:layout_row="2"
+        android:text="PRODUCTO
+#"/>
+
+
+
+<TextView
+    android:id="@+id/cuatro"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/celeste"
+    android:layout_column="1"
+    android:layout_row="0"
+    android:text="PRODUCTO
+#"/>
+<TextView
+    android:id="@+id/cinco"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/negro"
+    android:layout_column="1"
+    android:layout_row="1"
+    android:text="PRODUCTO
+#"/>
+<TextView
+    android:id="@+id/seis"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/verde"
+    android:layout_column="1"
+    android:layout_row="2"
+    android:text="PRODUCTO
+#"/>
+
+
+<TextView
+    android:id="@+id/siete"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/rosado"
+    android:layout_column="2"
+    android:layout_row="0"
+    android:text="PRODUCTO
+#"/>
+<TextView
+    android:id="@+id/ocho"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/amarillo"
+    android:layout_column="2"
+    android:layout_row="1"
+    android:text="PRODUCTO
+#"/>
+<TextView
+    android:id="@+id/nueve"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/morado"
+    android:layout_column="2"
+    android:layout_row="2"
+    android:text="PRODUCTO
+#"/>
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="usuario"
+        android:textAllCaps="true"/>
+
+    <EditText
+        android:id="@+id/ed1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Escriba el usuario aqui"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textAllCaps="true"/>
+
+    <EditText
+        android:id="@+id/ed2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Escriba el email aqui"/>
+
+        <Button
+            android:id="@+id/btn_enviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar"/>
+
+    </LinearLayout>
+</LinearLayout>
