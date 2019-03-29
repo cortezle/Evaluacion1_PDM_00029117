@@ -27,6 +27,7 @@ public class Main2Activity extends AppCompatActivity {
         if(mIntent!=null){
             tv1.setText("User:  "+bolsaR.getString(AppConstant.TEXT_KEY));
             tv2.setText("Password:  "+bolsaR.getString(AppConstant.TEXT_KEY2));
+            tv3.setText("Contador:  "+bolsaR.getString(AppConstant.TEXT_KEY3));
         }
 
     }

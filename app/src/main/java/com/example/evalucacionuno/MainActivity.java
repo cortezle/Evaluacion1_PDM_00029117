@@ -81,10 +81,13 @@ public class MainActivity extends AppCompatActivity {
         bt1.setOnClickListener(v->{
             String text = ed1.getText().toString();
             String text2 = ed2.getText().toString();
+            String text3 = String.valueOf((cont1-1)+(cont2-1)+(cont3-1)+(cont4-1)+(cont5-1)+(cont6-1)+(cont7-1)+(cont8-1) +(cont9-1));
+
             Intent mIntent = new Intent(MainActivity.this,Main2Activity.class);
             Bundle bolsa = new Bundle();
             bolsa.putString(AppConstant.TEXT_KEY,text);
             bolsa.putString(AppConstant.TEXT_KEY2,text2);
+            bolsa.putString(AppConstant.TEXT_KEY3,text3);
             mIntent.putExtras(bolsa);
             startActivity(mIntent);
         });
